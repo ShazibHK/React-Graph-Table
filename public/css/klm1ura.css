@@ -1,0 +1,37 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * merriweather:
+ *   - http://typekit.com/eulas/00000000000000003b9b38e4
+ *   - http://typekit.com/eulas/00000000000000003b9b38e2
+ *   - http://typekit.com/eulas/00000000000000003b9b38e1
+
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-06-25 12:36:54 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=klm1ura&ht=tk&f=12102.12103.15759.15760.15761.15863.39285.39287.39289&a=19913110&app=typekit&e=css");
+
+@font-face {
+font-family:"franklin-gothic-condensed";
+src:url("https://use.typekit.net/af/f95b4b/00000000000000003b9b1f75/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f95b4b/00000000000000003b9b1f75/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f95b4b/00000000000000003b9b1f75/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+font-display: swap;
+}
+
+@font-face {
+font-family:"franklin-gothic-condensed";
+src:url("https://use.typekit.net/af/0b1774/00000000000000003b9b1f77/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/0b1774/00000000000000003b9b1f77/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/0b1774/00000000000000003b9b1f77/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;
+font-display: swap;
+}
+
+@font-face {
+font-family:"franklin-gothic-condensed";
+src:url("https://use.typekit.net/af/665732/00000000000000003b9b1f79/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/665732/00000000000000003b9b1f79/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/665732/00000000000000003b9b1f79/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+font-display: swap;
+}

@@ -1,0 +1,995 @@
+// Import SCSS File
+@import "partials/variable";
+@import "partials/header";
+@import "partials/buttons";
+@import "partials/theme-color";
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+// Font-Family - Merriweather Start
+@font-face {
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'), url('../fonts/merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'merriweatherbold-italic';
+    src: url('../fonts/merriweather-bolditalic-webfont.woff2') format('woff2'), url('../fonts/merriweather-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'), url('../fonts/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+@font-face {
+    font-family: 'merriweather-italic';
+    src: url('../fonts/merriweather-italic-webfont.woff2') format('woff2'), url('../fonts/merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'merriweatherlight';
+    src: url('../fonts/merriweather-light-webfont.woff2') format('woff2'), url('../fonts/merriweather-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'merriweatherlight-italic';
+    src: url('../fonts/merriweather-lightitalic-webfont.woff2') format('woff2'), url('../fonts/merriweather-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    font-family: "merriweather", serif;
+    line-height: 1.5;
+}
+
+strong {
+    font-family: "franklin-gothic-condensed";
+    font-weight: $boldFont;
+}
+
+h1 {
+    font-family: "franklin-gothic-condensed";
+    font-weight: $boldFont;
+    line-height: 1.35;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'merriweatherbold';
+    line-height: 1.35;
+}
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    max-width: 1200px;
+}
+
+a {
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: inherit;
+    }
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+        box-shadow: none;
+        border: 0.1px solid transparent;
+    }
+}
+
+.form-control:focus,
+input[type="text"]:focus,
+input[type="submit"]:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.hide-md {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+}
+
+.display-md {
+    display: block;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hide-lg {
+    display: none;
+    @media screen and (max-width: 991px) {
+        display: block;
+    }
+}
+
+.display-lg {
+    display: block;
+    @media screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+
+/*-- ================================
+        font-size Start
+===================================== */
+
+.text-xlg {
+    font-size: 2.25rem;
+    line-height: 1.35;
+}
+
+.text-lg {
+    font-size: 1.375rem;
+    line-height: 1.5;
+}
+
+.text-md {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.text-sm {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.text-xs {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.text-xsm {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.body-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/*-- ================================
+        font-size End
+===================================== --*/
+
+
+/*-- ========================================================
+                    Banner Section Start
+=========================================================== */
+
+.banner-top-container {
+    background: linear-gradient(to right, rgba(27, 43, 86, 1) 0%, rgba(0, 127, 173, 1) 25%, rgba(0, 127, 173, 1) 75%, rgba(27, 43, 86, 1) 100%);
+    width: 100%;
+    .banner-row {
+        position: relative;
+        .hero-main-img {
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+            .banner-img-container {
+                height: 100%;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .title-section {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 94%;
+        @media screen and (max-width: 767px) {
+            position: relative;
+            min-height: 160px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0.9375rem;
+            left: 0;
+            top: 0;
+            transform: translate(-0%, -0%);
+            img {
+                display: none;
+            }
+        }
+        .brand-logo-img{
+            margin-bottom: 1.5625rem;
+            @media screen and (max-width: 1200px) {
+                margin-bottom: 1rem;
+            }
+            @media screen and (max-width: 991px) {
+                max-width: 170px;height: auto; margin-bottom: 0.5rem;
+            }
+        }
+        .banner-heading {
+            padding: 0;
+            margin: 0;
+            font-size: 2.8125rem;
+            line-height: 1.1;
+            @media screen and (max-width: 991px) {
+                font-size: 2.25rem;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 1.875rem;
+            }
+        }
+        strong {
+            font-size: 1.5rem;
+            line-height: 1.25;
+            @media screen and (max-width: 991px) {
+                font-size: 1.375rem;
+            }
+        }
+    }
+}
+
+
+/*-- ========================================================
+                Banner Section End
+=========================================================== */
+
+
+/*-- ================================
+         Search section start
+===================================== --*/
+
+.search-services-form {
+    margin: 0 auto 2.5rem;
+    position: relative;
+    @media only screen and (max-width: 767px) {
+        max-width: 400px;
+        margin-bottom: 1rem;
+    }
+    .search-input-wrap {
+        position: relative;
+    }
+    .search-input-group {
+        input[type="search"] {
+            border: 2px solid transparent;
+            color: $tertiaryGrey;
+            &::placeholder {
+                font-size: 1rem;
+                font-weight: 300;
+                color: $tertiaryGrey;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 2px solid $primaryBlue;
+                outline: none;
+                outline-offset: 0;
+                border-radius: 0;
+            }
+        }
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+        }
+        .form-control {
+            font-size: 1rem;
+            font-family: "franklin-gothic-condensed";
+            font-weight: 300;
+            padding: 0.375rem 1.65rem;
+        }
+    }
+    .input-group {
+        // border: 0.0625rem solid $primaryGrey;
+        border: 1px solid $lightGrey;
+        .form-control {
+            min-height: 3rem;
+        }
+    }
+    .service-search-submit[type="submit"] {
+        background: no-repeat center/2rem url(../images/search-icon.svg);
+        padding: 0 1.8rem;
+        border: none;
+        line-height: 2.7;
+        &:focus {
+            box-shadow: none;
+            border: 2px solid $primaryBlue;
+            outline: none;
+            outline-offset: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+.services-list-dd {
+    display: none;
+    list-style: none;
+    padding: 1.75rem 0 0.875rem;
+    width: 100%;
+    border: 1px solid;
+    border-color: transparent $lightGrey $lightGrey;
+    text-align: left;
+    li {
+        padding: 0 1.65rem 0.6875rem;
+        a {
+            color: $primary;
+            font-size: 0.875rem;
+            font-weight: 300;
+            @media only screen and (max-width: 767px) {
+                display: inline-flex;
+            }
+            &:focus {
+                outline: 2px solid $primary;
+            }
+        }
+        &:last-child {
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+
+/*-- ================================
+         Search section end
+===================================== --*/
+
+
+/*-- ===============================================
+               custom Check-box Start
+=============================================== --*/
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    input {
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+    }
+    label {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding-left: 1.875rem;
+        &::before {
+            content: '';
+            -webkit-appearance: none;
+            border: 1px solid $lightGrey;
+            padding: 0.688rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            position: absolute;
+            top: -2px;
+            left: 0;
+            background-color: $white;
+        }
+    }
+    input:checked+label::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0.55rem;
+        width: 0.5rem;
+        height: 0.875rem;
+        border: solid $primary;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        margin-top: -3px;
+        top: 4px;
+    }
+    input {
+        &:focus {
+            +label::before {
+                outline: 2px solid $primaryBlue;
+                outline-offset: 0;
+            }
+        }
+    }
+}
+
+
+/*-- ===============================================
+              custom Check-box End
+=============================================== --*/
+
+
+/*-- =======================================================
+           custom radio-button- Start
+=========================================================== --*/
+
+.custom-radio {
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 1.65rem;
+    cursor: pointer;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    color: $primary;
+    input[type="radio"] {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        cursor: pointer;
+        &:checked~.radio-circle {
+            //background: rgba(20, 38, 81, 0.1);
+            border: 1px solid $primary;
+            box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.06);
+        }
+        &:checked~span.radio-circle:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        // &:checked~.radio-txt {
+        //     color: $primary;
+        // }
+        &:focus {
+            +.radio-circle {
+                outline: 2px solid $primary;
+                outline-offset: 2px;
+            }
+        }
+    }
+    img{
+        vertical-align: text-bottom;
+    }
+    .radio-circle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: $white;
+        border: 1px solid #013066;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        display: block;
+        position: absolute;
+        left: 0;
+        //top: 3px;
+        &::after {
+            content: "";
+            height: 10px;
+            width: 10px;
+            background: #013066;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+    }
+}
+
+.custom-radio-secondary {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 1.725rem;
+    cursor: pointer;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    input[type="radio"] {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        cursor: pointer;
+        &:checked~.radio-circle {
+            background: rgba(20, 38, 81, 0.1);
+            border: 1px solid $primary;
+            box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.06);
+        }
+        &:checked~span.radio-circle:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        // &:checked~.radio-txt {
+        //     color: $primary;
+        // }
+        &:focus {
+            +.radio-circle {
+                outline: 2px solid $primary;
+                outline-offset: 2px;
+            }
+        }
+    }
+    .radio-circle {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background: $white;
+        border: 1px solid $primaryBlue;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: $primary;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+    }
+}
+
+.radio-group {
+    .form-check {
+        margin-bottom: 0.5rem;
+        padding-left: 2rem;
+        &:first-child{
+            padding-left: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*-- =======================================================
+           custom radio-button- End
+=========================================================== --*/
+
+
+/*-- =====================================================
+            left and right text wrap section Start
+========================================================== --*/
+
+.left-text-wrap {
+    padding: 2.5rem 0;
+    .col-row {
+        flex-direction: row;
+        @media screen and (max-width: 767px) {
+            .right-wrap {
+                order: 1;
+            }
+            .order2 {
+                order: 2;
+            }
+            .left-wrap {
+                order: 3;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .right-wrap img {
+            width: auto;
+        }
+    }
+    .img-section{
+        text-align: center;
+        position: relative;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .primary-title {
+        color: $primary;
+        margin-bottom: 0.5rem;
+        font-size: 2.625rem;
+        font-family: Franklin Gothic;
+        @media only screen and (max-width: 991px) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .text-container {
+        max-width: 94%;
+        margin: 0 auto 0 0;
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+        .desc {
+            color: #1D1D1D;
+            margin-bottom: 0.5rem;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            strong {
+                margin-right: 0.5rem;
+                @media screen and (max-width: 767px) {
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 0.75rem;
+                }
+            }
+        }
+        .link-text{
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.right-text-wrap {
+    padding: 2.188rem 0 2.5rem;
+    .col-row {
+        flex-direction: row-reverse;
+        @media screen and (max-width: 767px) {
+            .right-wrap {
+                order: 1;
+            }
+            .order2 {
+                order: 2;
+            }
+            .left-wrap {
+                order: 3;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .right-wrap img {
+            width: auto;
+        }
+    }
+    .img-section{
+        text-align: center;
+        position: relative;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .primary-title {
+        color: $primary;
+        margin-bottom: 0.5rem;
+        font-size: 2.625rem;
+        font-family: Franklin Gothic;
+        @media only screen and (max-width: 991px) {
+            font-size: 1.5rem;
+        }
+        @media only screen and (max-width: 767px) {
+            text-align: left;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .text-container {
+        padding-left: 1.65rem;
+        max-width: 94%;
+        margin: 0 auto 0 0;
+        @media screen and (max-width: 767px) {
+            padding-left: 0;
+            max-width: 100%;
+        }
+        .desc {
+            color: #1D1D1D;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            strong {
+                margin-right: 0.5rem;
+                @media screen and (max-width: 767px) {
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 0.75rem;
+                }
+            }
+        }
+        .link-text{
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+
+
+/*-- =====================================================
+              left and right text wrap section End
+========================================================== --*/
+
+
+/*-- =====================================================
+                Link Text Style Start
+========================================================== --*/
+
+.link-text {
+    font-family: 'merriweatherbold';
+    position: relative;
+    display: inline-block;
+    color: $secondary;
+    @media only screen and (max-width: 767px) {
+        font-size: 1rem;
+    }
+    &::before {
+        content: "";
+        width: 22px;
+        height: 21px;
+        background: url(../images/link-text-arrow.svg) no-repeat left top;
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 0.625rem;
+    }
+    &:hover,
+    &:focus {
+        color: $secondary;
+    }
+}
+
+
+/*-- =====================================================
+                Link Text Style End
+========================================================== --*/
+
+
+/*-- =====================================================
+                back arrow Link Text Style Start
+========================================================== --*/
+
+.back-arrow-link-text {
+    position: relative;
+    display: inline-block;
+    color: $primary;
+    padding-left: 1rem;
+    &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 0.625rem;
+        width: 0.375rem;
+        height: 0.625rem;
+        background: url(../images/left-chevron-blue.svg) no-repeat left top;
+        position: absolute;
+        left: 0;
+        top: 4px;
+    }
+    &:hover,
+    &:focus {
+        color: $primary;
+    }
+}
+
+
+/*-- =====================================================
+                 back arrow Link Text Style End
+========================================================== --*/
+
+.table-wrap {
+    overflow-x: auto;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 2rem;
+    }
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    color: $darkestGrey;
+    margin-top: 1rem;
+    caption {
+        caption-side: top;
+    }
+    strong {
+        font-family: 'merriweatherbold';
+    }
+    tr {
+        &:nth-child(even) {
+            background-color: $grey;
+        }
+        td,
+        th {
+            padding: 0.625rem 0.938rem;
+            &:first-child {
+                width: 28%;
+                text-align: left;
+            }
+        }
+        td {
+            border-left: 1px solid $lightGrey;
+        }
+    }
+}
+
+
+.projections-tbl{
+    tr {
+        &:nth-child(odd) {
+            background-color: $grey;
+        }
+        &:nth-child(even) {
+            background-color: $white;
+        }
+        &:nth-child(odd) {
+            .fixed-column {
+                background-color: $grey;
+            }
+        }
+        &:nth-child(even) {
+            .fixed-column {
+                background-color: $white;
+            }
+        }
+        &:first-child {
+            background-color: transparent;
+            .fixed-column {
+                background-color: $white;
+            }
+            strong {
+                color: $darkestGrey;
+                font-size: 0.875rem;
+            }
+            td {
+                &::after {
+                    border: 0;
+                }
+            }
+        }
+        &.light-blue-tr {
+            background-color: $lightBlue;
+            .fixed-column {
+                background-color: $lightBlue;
+            }
+        }
+        th {
+            font-weight: normal;
+        }
+        td,
+        th {
+            font-size: 0.875rem;
+            padding: 0.625rem 1.625rem;
+            height: 50px;
+            &:first-child {
+                border-left: 0;
+            }
+            &:nth-child(2) {
+                border-left: 0;
+            }
+            strong {
+                font-size: 1rem;
+                color: $black;
+            }
+            span {
+                display: block;
+                font-size: 0.75rem;
+            }
+        }
+    }
+    .fixed-column {
+        position: sticky;
+        left: 0;
+        &::after {
+            content: '';
+            border-right: 1px solid $lightGrey;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+.bg-even-row{
+    tr {
+        &:nth-child(even) {
+            background-color: $grey;
+        }
+        &:nth-child(odd) {
+            background-color: $white;
+        }
+        &:nth-child(even) {
+            .fixed-column {
+                background-color: $grey;
+            }
+        }
+        &:nth-child(odd) {
+            .fixed-column {
+                background-color: $white;
+            }
+        }
+        &:first-child {
+            background-color: transparent;
+            .fixed-column {
+                background-color: $white;
+            }
+        }
+        &.light-blue-tr {
+            background-color: $lightBlue;
+            .fixed-column {
+                background-color: $lightBlue;
+            }
+        }
+    }
+}
+
+/*-- ==========================================
+        Text Only Section Start
+============================================= --*/
+
+.text-only-section {
+    .data-text {
+        border-top: 1px solid $lightGrey;
+        font-size: 0.75rem;
+        padding: 1.75rem 0 2rem 0;
+        color: $black;
+        .primary-title{
+            color: $primary;
+        }
+    }
+}
+
+
+/*-- ==========================================
+        Text Only Section End
+============================================= --*/
+
+.secondary-header-banner {
+    background: linear-gradient(to right, rgba(27, 43, 86, 1) 0%, rgba(0, 127, 173, 1) 25%, rgba(0, 127, 173, 1) 75%, rgba(27, 43, 86, 1) 100%);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    .title {
+        font-size: 1.875rem;
+        //font-family: "franklin-gothic-condensed";
+        //font-weight: $boldFont;
+        color: $white;
+        margin: 0;
+        padding: 0.5rem 0;
+    }
+}

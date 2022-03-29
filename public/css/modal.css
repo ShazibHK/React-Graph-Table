@@ -1,0 +1,708 @@
+@media only screen and (max-width: 1025px) {
+  .modal {
+    padding-right: 0 !important;
+  }
+}
+
+.modal .modal-header {
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.modal .close {
+  margin: 0;
+  position: absolute;
+  top: 1.1rem;
+  right: 0.875rem;
+  padding: 0;
+  z-index: 99;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .modal .close {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
+.modal .close:not(:disabled):not(.disabled):hover, .modal .close:not(:disabled):not(.disabled):focus {
+  opacity: 1;
+}
+
+.modal .close:focus {
+  outline: 2px solid #002F65;
+  outline-offset: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0.1px solid transparent;
+  opacity: 1;
+}
+
+.modal .modal-wrapper {
+  margin: 2.4rem auto 0.6875rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .property-modal.show {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .property-modal .modal-dialog {
+    max-width: 730px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .property-modal .modal-lg {
+    max-width: 1200px;
+  }
+}
+
+.property-modal .modal-body {
+  padding: 0 0 1rem 0;
+}
+
+.property-modal .modal-body .modal-wrapper {
+  max-width: 973px;
+}
+
+.property-modal .modal-body .modal-title {
+  font-size: 1.375rem;
+}
+
+.property-modal .modal-body .modal-title + img {
+  margin-top: 0.95rem;
+}
+
+.property-modal .modal-body .modal-sub-title {
+  margin-bottom: 2.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .property-modal .modal-body .modal-sub-title {
+    border-bottom: 1px solid #999;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.property-modal .modal-body .text-row {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+  font-family: 'merriweatherbold';
+}
+
+@media screen and (max-width: 767px) {
+  .property-modal .modal-body .text-row {
+    max-width: 100%;
+  }
+}
+
+.property-modal .modal-body .action-row {
+  margin-top: 0.80rem;
+  font-family: 'merriweatherbold';
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .property-modal .modal-body .action-row {
+    margin-bottom: 2rem;
+  }
+}
+
+.property-modal .modal-body .action-row:focus, .property-modal .modal-body .action-row:hover {
+  color: #12749E;
+}
+
+.property-modal .modal-body .action-row.secondary-clr:focus, .property-modal .modal-body .action-row.secondary-clr:hover {
+  color: #B32017;
+}
+
+.property-modal .modal-body .btn-wrapper {
+  padding-bottom: 1.25rem;
+}
+
+.property-modal .modal-body .search-services-form {
+  max-width: 700px;
+  margin-top: 1.5rem;
+  min-height: 264px;
+}
+
+.property-modal .modal-body .services-list-dd {
+  background: #f2f2f2;
+  border: none;
+}
+
+.property-modal .modal-body .icon-close {
+  font-size: 1.125rem;
+  padding-right: 0.1875rem;
+}
+
+.property-modal .modal-body .icon-add {
+  font-size: 1.125rem;
+  vertical-align: bottom;
+  padding-right: 0.1875rem;
+}
+
+.property-modal .modal-body .properties-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.property-modal .modal-body .item-col {
+  max-width: 100%;
+}
+
+.property-modal .modal-body .item-col > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .property-modal .modal-body .item-col > img {
+    display: none;
+  }
+}
+
+.property-modal .js-target-div {
+  display: none;
+}
+
+.property-modal .js-target-div.active {
+  display: block;
+}
+
+/*-- ============================================
+        Investment Form modal popup start
+================================================= -- */
+@media screen and (min-width: 992px) {
+  .investment-modal .modal-lg {
+    max-width: 731px;
+  }
+}
+
+.investment-modal .modal-body {
+  padding: 0 0 1rem;
+}
+
+.investment-modal .investment-form .form-wrapper {
+  max-width: 601px;
+  margin: 1.2rem auto 0.3125rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .form-wrapper {
+    margin: 2.5rem 0 1.875rem;
+  }
+}
+
+.investment-modal .investment-form .form-wrapper h2 {
+  margin-bottom: 0.1875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.investment-modal .investment-form .form-content {
+  max-width: 450px;
+  margin-bottom: 0.9rem;
+}
+
+.investment-modal .investment-form .form-group {
+  margin-bottom: 0.45rem;
+}
+
+.investment-modal .investment-form .form-group label {
+  margin-bottom: 0.1875rem;
+  font-family: 'merriweatherbold';
+}
+
+.investment-modal .investment-form .form-control {
+  border-radius: 0;
+  height: 1.875rem;
+  padding: 0 0.2rem;
+  font-size: 0.75rem;
+  border: 1px solid #707070;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .form-control {
+    height: 2.4rem;
+  }
+}
+
+.investment-modal .investment-form .primary-btn {
+  min-width: 7.5rem;
+  border: none;
+}
+
+.investment-modal .investment-form .form-check {
+  padding-left: 0;
+}
+
+.investment-modal .investment-form .custom-checkbox {
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .custom-checkbox {
+    margin-bottom: 1.65rem;
+  }
+}
+
+.investment-modal .investment-form .custom-checkbox label {
+  margin-bottom: 0;
+  color: #1D1D1D;
+}
+
+.investment-modal .investment-form .captcha-img {
+  margin-bottom: 1rem;
+  max-width: 263px;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .captcha-img {
+    margin-bottom: 2.3rem;
+  }
+}
+
+.investment-modal .investment-form .captcha-img img {
+  width: 100%;
+}
+
+.investment-modal .investment-form .checkbox-group {
+  margin-top: 0.83rem;
+  max-width: 395px;
+}
+
+.investment-modal .investment-form .checkbox-group legend {
+  font-family: 'merriweatherbold';
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .checkbox-group legend {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.investment-modal .investment-form .checkbox-group fieldset {
+  margin-bottom: 0.2rem;
+}
+
+.investment-modal .investment-form .custom-radio-secondary {
+  text-transform: initial;
+}
+
+.investment-modal .investment-form .custom-radio-secondary input[type="radio"]:checked ~ .radio-txt {
+  font-family: 'merriweatherbold';
+}
+
+.investment-modal .investment-form .declaimer-wrap {
+  max-width: 395px;
+  margin-bottom: 1rem;
+}
+
+.investment-modal .investment-form .disclaimer {
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  color: #1D1D1D;
+  font-family: 'merriweatherbold-italic';
+}
+
+@media screen and (max-width: 767px) {
+  .investment-modal .investment-form .disclaimer {
+    font-size: 0.6875rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .investment-modal .pad-right-5 {
+    padding-right: 0.313rem;
+  }
+  .investment-modal .pad-left-5 {
+    padding-left: 0.313rem;
+  }
+}
+
+/*-- ============================================
+        Investment Form modal popup End
+================================================= -- */
+/*-- ============================================
+        Message modal popup start
+================================================= -- */
+@media screen and (min-width: 1240px) {
+  .message-modal .modal-sm {
+    max-width: 446px;
+  }
+}
+
+.message-modal .primary-btn {
+  min-width: 7.5rem;
+  margin: 1.875rem 0;
+}
+
+.message-modal .modal-body .modal-wrapper {
+  padding: 0 1rem;
+}
+
+.message-modal .modal-body .modal-wrapper .modal-title {
+  margin-bottom: 0.5rem;
+}
+
+/*-- ============================================
+        Message modal popup End
+================================================= -- */
+/*-- ============================================
+        PDF modal popup Start
+================================================= -- */
+@media screen and (min-width: 768px) {
+  .pdf-modal .modal-lg {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .pdf-modal .modal-lg {
+    max-width: 951px;
+  }
+}
+
+.pdf-modal .modal-body {
+  padding-top: 0;
+  background: #f2f2f2;
+}
+
+.pdf-modal .modal-body .modal-wrapper {
+  padding: 0 3.4rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-modal .modal-body .modal-wrapper {
+    padding: 0;
+  }
+}
+
+.pdf-modal .modal-body .modal-wrapper .modal-title {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-modal .modal-body .preview-details {
+  border: 1px solid #707070;
+  background-color: #ffffff;
+  max-width: 310px;
+}
+
+.pdf-modal .modal-body .preview-details img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-modal .modal-body .preview-details {
+    display: none;
+  }
+}
+
+.pdf-modal .pdf-form .form-wrapper {
+  max-width: 601px;
+  margin: 0 auto 0.3125rem;
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 567px) {
+  .pdf-modal .pdf-form .form-wrapper {
+    margin-top: 1.5rem;
+  }
+}
+
+.pdf-modal .pdf-form .form-wrapper h2 {
+  margin-bottom: 0.1875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-modal .pdf-form .form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.pdf-modal .pdf-form .form-content {
+  max-width: 450px;
+  margin-bottom: 0.9rem;
+}
+
+.pdf-modal .pdf-form .form-group {
+  margin-bottom: 0.45rem;
+}
+
+.pdf-modal .pdf-form .form-group label {
+  margin-bottom: 0.1875rem;
+  font-family: 'merriweatherbold';
+}
+
+.pdf-modal .pdf-form .form-control {
+  border-radius: 0;
+  height: 1.875rem;
+  padding: 0 0.2rem;
+  font-size: 0.75rem;
+  border: 1px solid #707070;
+}
+
+.pdf-modal .pdf-form .primary-btn {
+  min-width: 7.5rem;
+  border: none;
+}
+
+.pdf-modal .pdf-form .form-check {
+  padding-left: 0;
+}
+
+.pdf-modal .pdf-form .custom-checkbox {
+  margin-bottom: 1rem;
+}
+
+.pdf-modal .pdf-form .custom-checkbox label {
+  margin-bottom: 0;
+  color: #1D1D1D;
+}
+
+.pdf-modal .pdf-form .captcha-img {
+  margin-top: 0.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.pdf-modal .pdf-form .captcha-img img {
+  max-width: 263px;
+}
+
+@media screen and (max-width: 567px) {
+  .pdf-modal .pdf-form .captcha-img img {
+    max-width: 100%;
+  }
+}
+
+.pdf-modal .pdf-form .captcha-wrap {
+  margin-top: 0.83rem;
+  max-width: 395px;
+}
+
+.pdf-modal .pdf-form .declaimer-wrap {
+  max-width: 395px;
+  margin-bottom: 1rem;
+}
+
+.pdf-modal .pdf-form .checkbox-group {
+  margin-top: 0.83rem;
+  max-width: 395px;
+}
+
+.pdf-modal .pdf-form .checkbox-group legend {
+  font-family: 'merriweatherbold';
+  margin-bottom: 0.8rem;
+}
+
+.pdf-modal .pdf-form .checkbox-group fieldset {
+  margin-bottom: 0.8125rem;
+}
+
+.pdf-modal .pdf-form .custom-radio-secondary {
+  text-transform: initial;
+}
+
+.pdf-modal .pdf-form .custom-radio-secondary input[type="radio"]:checked ~ .radio-txt {
+  font-family: 'merriweatherbold';
+}
+
+.pdf-modal .pdf-form .input-email {
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-modal .pdf-form .input-email {
+    margin-top: 0;
+  }
+}
+
+.pdf-modal .pdf-form .disclaimer {
+  font-family: 'merriweatherbold-italic';
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-modal .pdf-form .disclaimer {
+    font-size: 0.6875rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pdf-modal .pad-right-5 {
+    padding-right: 0.313rem;
+  }
+  .pdf-modal .pad-left-5 {
+    padding-left: 0.313rem;
+  }
+}
+
+/*-- ============================================
+        PDF modal popup End
+================================================= -- */
+/*-- ============================================
+        Address option modal Start
+================================================= -- */
+@media screen and (min-width: 768px) {
+  .address-modal .modal-lg {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .address-modal .modal-lg {
+    max-width: 736px;
+  }
+}
+
+.address-modal .primary-btn {
+  min-width: 7.5rem;
+  margin: 0.938rem 0;
+}
+
+.address-modal .show-more-wrap {
+  padding: 0.625rem 0;
+  max-width: 370px;
+  margin: auto;
+  border-bottom: 1px solid #707070;
+}
+
+.address-modal .show-more-wrap .show-more-link {
+  font-family: 'merriweatherbold';
+}
+
+.address-modal .modal-body .modal-wrapper {
+  margin: 0.3rem auto 0.6875rem;
+  text-align: left;
+}
+
+.address-modal .modal-body .modal-wrapper .modal-title {
+  margin-bottom: 0.5rem;
+}
+
+.address-modal .modal-body .media {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 1.875rem;
+}
+
+@media screen and (max-width: 767px) {
+  .address-modal .modal-body .media {
+    padding: 0;
+  }
+}
+
+.address-modal .modal-body .media .media-body {
+  color: #333333;
+}
+
+.address-modal .modal-body .media .media-body h3 {
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  color: #002F65;
+}
+
+@media screen and (max-width: 767px) {
+  .address-modal .modal-body .media .media-body h3 {
+    margin-top: 1rem;
+  }
+}
+
+.address-modal .modal-body .media .media-body p {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .address-modal .modal-body .media {
+    display: block;
+    text-align: center;
+  }
+}
+
+.address-modal .modal-body .radio-input-group {
+  margin-top: 2rem;
+}
+
+.address-modal .modal-body .radio-input-group fieldset {
+  max-width: 270px;
+  margin: auto;
+  font-size: 1.125rem;
+}
+
+.address-modal .modal-body .radio-input-group fieldset .form-check {
+  margin-bottom: 1rem;
+}
+
+.address-modal .modal-body .radio-input-group .link-wrap {
+  text-align: center;
+}
+
+.address-modal .modal-body .radio-input-group .show-more-wrap {
+  text-align: center;
+}
+
+.address-modal .modal-body .radio-input-group .show-more-wrap .more-list {
+  background: transparent;
+  border: none;
+  font-family: 'merriweatherbold';
+  color: #002F65;
+}
+
+.address-modal .nf-address .modal-wrapper .media {
+  padding: 3.125rem 4.688rem 1.25rem;
+}
+
+.address-modal .nf-address .modal-wrapper .media p {
+  margin-bottom: 1rem;
+  font-family: 'merriweatherbold';
+}
+
+@media screen and (max-width: 767px) {
+  .address-modal .nf-address .modal-wrapper .media {
+    padding: 0;
+  }
+}
+
+/*-- ============================================
+        Address option modal End
+================================================= -- */
+/*-- ============================================
+        Advance Parameters modal Start
+================================================= -- */
+.advanced-wrap .advance-para p.advance-text {
+  margin-bottom: 1rem;
+}
+
+.advanced-wrap .advance-para .range-data.rent {
+  margin-bottom: 1rem;
+}
+
+/*-- ============================================
+        Advance Parameters modal End
+================================================= -- */

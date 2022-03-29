@@ -1,0 +1,110 @@
+.location-section {
+  margin: 2.25rem 0 7.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .location-section {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.location-section .location-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.location-section .title-row {
+  text-align: center;
+  max-width: 566px;
+  margin: 0 auto 2.15rem;
+  line-height: 1.1;
+}
+
+.location-section .text-wrapper {
+  padding-top: 2.5rem;
+}
+
+.location-section .text-wrapper .estimate-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .location-section .text-wrapper .estimate-col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.location-section .text-wrapper .stick {
+  height: 2.75rem;
+  width: 0.0625rem;
+  background: #002F65;
+  margin-left: 3.75rem;
+  margin-top: 7.6875rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .location-section .text-wrapper .stick {
+    margin-left: 1.25rem;
+  }
+}
+
+.location-section .text-wrapper .estimate-section {
+  width: 10.6875rem;
+  height: 8.375rem;
+  background-color: #ffffff;
+  border: 1px solid #002F65;
+  position: relative;
+  z-index: 1;
+  border-radius: 7px 7px 7px 0;
+  padding: 0.65rem;
+  margin-left: -1px;
+}
+
+.location-section .text-wrapper .estimate-section span {
+  display: block;
+  letter-spacing: 1.25px;
+}
+
+.location-section .text-wrapper .estimate-section strong {
+  font-size: 0.875rem;
+}
+
+.location-section .text-wrapper .img-row {
+  position: absolute;
+  top: 35%;
+}
+
+.location-section .text-wrapper img {
+  display: block;
+  max-width: 335px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .location-section .text-wrapper img {
+    padding-bottom: 1.25rem;
+  }
+}
+
+.location-section .text-wrapper .text-col {
+  color: #1D1D1D;
+  padding-top: 1.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .location-section .text-wrapper .text-col {
+    margin-top: 5rem;
+  }
+}
+
+.location-section .text-wrapper .text-col p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,17 @@
+header{
+    background-color: $primary;
+    color: $white;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer{
+    background-color: $darkGreyPrimary;
+    color: $white;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

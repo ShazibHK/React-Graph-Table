@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>text-link-arrow-green</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.9" transform="translate(-220.000000, -1949.000000)">
+            <g id="Group-2" transform="translate(100.000000, 1588.000000)">
+                <g id="content" transform="translate(120.000000, 110.000000)">
+                    <g id="TextLink" transform="translate(0.000000, 243.000000)">
+                        <g id="text-link-arrow-green" transform="translate(0.000000, 8.000000)">
+                            <ellipse id="Oval" fill="#B32017" cx="10.9468085" cy="10.5" rx="10.9468085" ry="10.5"></ellipse>
+                            <path d="M4.40396318,7.54445685 C4.40396318,7.13214768 4.55607096,6.73569655 4.84507574,6.41853565 C5.43829608,5.80007189 6.41178587,5.80007189 7.00500621,6.41853565 L11.6290827,11.2235233 L16.2531592,6.40267761 C16.8463795,5.78421385 17.8198693,5.78421385 18.4130896,6.40267761 C19.00631,7.02114136 19.00631,8.03605625 18.4130896,8.65452001 L12.7090479,14.6012869 C12.4200431,14.9025898 12.0397737,15.0611702 11.6290827,15.0611702 C11.2183917,15.0611702 10.8381222,14.8867317 10.5491175,14.6012869 L4.84507574,8.67037805 C4.55607096,8.35321715 4.40396318,7.94090798 4.40396318,7.54445685" id="Fill-1" fill="#ffffff" transform="translate(11.630984, 10.500000) rotate(-90.000000) translate(-11.630984, -10.500000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
